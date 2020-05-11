@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chRecyclerView"
+        android:layout_width="405dp"
+        android:layout_height="411dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chDelivery"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:text="Standard Deivery"
+        app:layout_constraintBottom_toTopOf="@+id/chPayment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chTotal"
+        android:layout_width="141dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:text="Total"
+        app:layout_constraintBottom_toTopOf="@+id/chPayment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chTotalValue"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="right|center_vertical"
+        android:text="$0"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chPayment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+            android:id="@+id/chVr1"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:background="#696969"
+            app:layout_constraintBottom_toTopOf="@+id/chDelivery"
+            tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/chDelType"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right|center_vertical"
+        android:text="Free"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chPayment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/chPayment"
+            android:layout_width="395dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorBlack"
+            android:gravity="center"
+            android:text="Proceed To payment"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

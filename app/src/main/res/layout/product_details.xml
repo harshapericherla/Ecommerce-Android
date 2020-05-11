@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="405dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circle"
+        android:layout_width="125dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="12dp"
+        app:ci_drawable="@drawable/circleindicator_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+    </me.relex.circleindicator.CircleIndicator>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="123dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+    <TableRow
+        android:id="@+id/hr1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        tools:layout_editor_absoluteX="-16dp"></TableRow>
+
+    <TextView
+        android:id="@+id/sub_desc"
+        android:layout_width="343dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="product_sub_description"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="price"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_desc" />
+
+    <TableRow
+        android:id="@+id/hr2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7dp"
+        android:background="#696969"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        tools:layout_editor_absoluteX="0dp"></TableRow>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="350dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="product_description"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TableRow
+        android:id="@+id/hr3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="76dp"
+        android:background="#696969"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"></TableRow>
+
+    <Button
+        android:id="@+id/add_to_cart_btn"
+        android:layout_width="154dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorWhite"
+        android:text="Add To Cart"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buy_now_btn"
+        android:layout_width="154dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/colorBlack"
+        android:text="Buy Now"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBaseline_toBaselineOf="@+id/add_to_cart_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

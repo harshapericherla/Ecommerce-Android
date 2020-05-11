@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1027919018723",
+    "firebase_url": "https://androidclass-59cec.firebaseio.com",
+    "project_id": "androidclass-59cec",
+    "storage_bucket": "androidclass-59cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027919018723:android:85d79ca24f8a43001363d6",
+        "android_client_info": {
+          "package_name": "com.conestoga.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027919018723-tlpad68qi71etu2qeh37r5npn002qaqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conestoga.ecommerce",
+            "certificate_hash": "123c6c7c17eff95678a7feaf4fb9bcce0277e9f0"
+          }
+        },
+        {
+          "client_id": "1027919018723-c8mu0ejc4finsh2uss67ngmor1k0b3kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBF-x6IUpeMRiYs2M5cacnGqAzOExuwGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027919018723-c8mu0ejc4finsh2uss67ngmor1k0b3kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
